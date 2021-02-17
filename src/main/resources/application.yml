@@ -10,3 +10,14 @@ spring:
     password: root
     username: root
     url: jdbc:mysql//localhost:3306/fornecedor
+
+spring:
+  application:
+    name: 'fornecedor'
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://localhost:8761/eureka
