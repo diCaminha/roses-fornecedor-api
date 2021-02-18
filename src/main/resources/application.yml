@@ -10,10 +10,13 @@ spring:
     password: root
     username: root
     url: jdbc:mysql//localhost:3306/fornecedor
-
-spring:
   application:
     name: 'fornecedor'
+  profiles:
+    active: default
+  cloud:
+    config:
+      uri: http:///localhost:8888
 
 eureka:
   client:
